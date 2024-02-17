@@ -1,7 +1,7 @@
 # TSP_QAOA
 This repository contains the implementation of the Traveling Salesman Problem with Quantum Approximate Optimization Algorithm.
 
-
+## Licensing
 Shield: [![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
 
 This work is licensed under a
