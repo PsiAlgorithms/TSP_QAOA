@@ -6,8 +6,10 @@ This repository contains the implementation of the Traveling Salesman Problem wi
 
 All neceassry packages and libraries are inclunded in requirements.txt.
 
-main.py contains the code to create a TSP_QAOA objects with both n^2 and nlogn encodings, and runs the simulation and result analysis.
+main.py contains the code to create TSP_QAOA objects with both n^2 and nlogn encodings, and runs the simulation and result analysis.
+
 We have also included our test coordinates witch can be seen in plot_coordinates.ipynb.
+
 hamiltonian.py contains the problem hamiltonian of both n^2 and nlogn encodings, with coefficient.py contatning the coeffients in both encodings' formulations.
 
 ## Cite
