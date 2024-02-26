@@ -1,14 +1,16 @@
-import numpy as np
-import pickle as pkl
+import numpy          as np
+import pickle         as pkl
+import scipy.optimize as opt
+
+from qiskit.quantum_info    import Statevector
+from qiskit.circuit         import QuantumCircuit, QuantumRegister
+from qiskit.circuit.library import PauliEvolutionGate
+from qiskit.compiler        import transpile
+from qiskit_aer.backends    import statevector_simulator
+
+from utilities import path_distance, path_rev, check_validity, generate_binary_nums
 import coefficient
 import hamiltonian
-from qiskit.quantum_info import Statevector
-from qiskit.circuit.library import PauliEvolutionGate
-from qiskit.circuit import QuantumCircuit, QuantumRegister
-from qiskit_aer.aerprovider import AerProvider
-from qiskit.execute_function import execute
-import scipy.optimize as opt
-from utilities import path_distance, path_rev, check_validity, generate_binary_nums
 
 
 class TSP_QAOA:
@@ -32,7 +34,7 @@ class TSP_QAOA:
             self.problem_hamlitonian = hamiltonian.hamiltonian_nlogn
 
         self.mixing_hamiltonian = hamiltonian.mixer
-        self.backend = AerProvider().get_backend("statevector_simulator")
+        self.backend = statevector_simulator.StatevectorSimulator()
 
     def generate_coeffs(self):
         self.coeff = self.coeff_generator(self.coordinates)
@@ -104,7 +106,8 @@ class TSP_QAOA:
             DESCRIPTION.
         """
         qc = self.create_qaoa_circ(theta)
-        job = execute(qc, self.backend)
+        qc_transpiled = transpile(qc, self.backend)
+        job = self.backend.run(qc_transpiled)
         result = job.result()
         state = result.get_statevector(qc)
         return state

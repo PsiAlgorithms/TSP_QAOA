@@ -1,8 +1,6 @@
 matplotlib==3.8.0
-numpy==1.25.2
-qiskit==0.45.1
-qiskit_aer==0.13.1
-qiskit_ibmq_provider==0.20.2
-qiskit_terra==0.45.1
+numpy==1.26.4
+qiskit==1.0.1
+qiskit_aer==0.13.3
 scipy==1.11.4
 sympy==1.12
