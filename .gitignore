@@ -1,5 +1,5 @@
 main.py
-*.drawio
+*.drawio*
 
 ### JupyterNotebooks ###
 # gitignore template for Jupyter Notebooks
