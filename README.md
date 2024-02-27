@@ -15,7 +15,7 @@ The Traveling Salesman Problem is a classic problem in combinatorial optimizatio
 **Files:**
 
 <p align="center">
-  <img alt="Repository Structure" src="./images/repo_overview.svg">
+  <img alt="Repository Structure" src="./images/repo_structure.svg">
 </p>
 
 * `main.ipynb`: Includes the example usage. it creates TSP_QAOA objects using both $n^2$ and $n \log n$ encodings, runs the QAOA simulation, and analyzes the results.
