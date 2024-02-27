@@ -1,4 +1,5 @@
 main.py
+*.drawio
 
 ### JupyterNotebooks ###
 # gitignore template for Jupyter Notebooks
