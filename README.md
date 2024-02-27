@@ -4,6 +4,10 @@ This repository contains the implementation of the Traveling Salesman Problem wi
 
 ## Repository overview
 
+<p align="center">
+  <img alt="Repository overview" src="./images/repo_overview.svg">
+</p>
+
 All neceassry packages and libraries are inclunded in requirements.txt.
 
 main.py contains the code to create TSP_QAOA objects with both n^2 and nlogn encodings, and runs the simulation and result analysis.
