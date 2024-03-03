@@ -26,7 +26,15 @@ The Traveling Salesman Problem is a classic problem in combinatorial optimizatio
 
 ## Citation
 
-The respective paper will soon be published.
+Cite as:
+```
+@article{ramezani2024reducing,
+  title={Reducing the Number of Qubits from $ n\^{} 2$ to $ n$\backslash$log\_ $\{$2$\}$(n) $ to Solve the Traveling Salesman Problem with Quantum Computers: A Proposal for Demonstrating Quantum Supremacy in the NISQ Era},
+  author={Ramezani, Mehdi and Salami, Sadegh and Shokhmkar, Mehdi and Moradi, Morteza and Bahrampour, Alireza},
+  journal={arXiv preprint arXiv:2402.18530},
+  year={2024}
+}
+```
 
 ## Contributing
 
