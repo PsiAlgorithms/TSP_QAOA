@@ -26,6 +26,8 @@ The Traveling Salesman Problem is a classic problem in combinatorial optimizatio
 
 ## Citation
 
+Arxiv link: https://arxiv.org/abs/2402.18530
+
 Cite as:
 
 ```bibtex
